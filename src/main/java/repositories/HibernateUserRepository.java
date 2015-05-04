@@ -45,7 +45,7 @@ public class HibernateUserRepository implements UserRepository {
         session.close();
 
         if(result.isEmpty())
-            throw new NoSuchUserFoundException(String.format("U¿ytkownik '%s' nie istnieje", username));
+            throw new NoSuchUserFoundException(String.format("UÅ¼ytkownik '%s' nie istnieje", username));
         else
             return result.get(0);
     }

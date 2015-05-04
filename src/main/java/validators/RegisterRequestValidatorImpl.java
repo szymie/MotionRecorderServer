@@ -13,15 +13,15 @@ public class RegisterRequestValidatorImpl implements RegisterRequestValidator {
     public void validate(RegisterRequest registerRequest) throws InvalidRegisterRequestException {
 
         if(registerRequest.getUsername().trim().isEmpty())
-            throw new InvalidRegisterRequestException("Pole 'nazwa uøytkownika' jest puste");
+            throw new InvalidRegisterRequestException("Pole 'nazwa u≈ºytkownika' jest puste");
 
         if(registerRequest.getPassword().isEmpty())
-            throw new InvalidRegisterRequestException("Pole 'has≥o' jest puste");
+            throw new InvalidRegisterRequestException("Pole 'has≈Ço' jest puste");
 
         if(registerRequest.getWeight() <= 0)
-            throw new InvalidRegisterRequestException("Pole 'waga' zawiera niepoprawnπ wartoúÊ");
+            throw new InvalidRegisterRequestException("Pole 'waga' zawiera niepoprawnƒÖ warto≈õƒá");
 
         if(registerRequest.getHeight() <= 0)
-            throw new InvalidRegisterRequestException("Pole 'wzrost' zawiera niepoprawnπ wartoúÊ");
+            throw new InvalidRegisterRequestException("Pole 'wzrost' zawiera niepoprawnƒÖ warto≈õƒá");
     }
 }

@@ -20,7 +20,7 @@ public class LoginUserController {
     @RequestMapping(
             value = "/login",
             method = RequestMethod.POST,
-            headers = {"Accept=application/json", "Content-Type=application/json"}, produces={"application/json; charset=UTF-8"})
+            headers = {"Accept=application/json", "Content-Type=application/json"}, produces={"application/json;charset=UTF-8"})
     public @ResponseBody LoginResponse login(@RequestBody LoginRequest request) {
 
         return loginUserUseCase.execute(request);

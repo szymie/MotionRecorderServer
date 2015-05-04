@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import usecases.RegisterUser;
 
+import java.io.UnsupportedEncodingException;
+
 /**
  * Created by Szymon on 2015-04-27.
  */
@@ -22,7 +24,7 @@ public class RegisterUserController {
     @RequestMapping(
             value = "/register",
             method = RequestMethod.POST,
-            headers = {"Accept=application/json", "Content-Type=application/json"}, produces={"application/json; charset=UTF-8"})
+            headers = {"Accept=application/json", "Content-Type=application/json"}, produces={"application/json;charset=UTF-8"})
     public @ResponseBody RegisterResponse login(@RequestBody RegisterRequest request) {
 
         return registerUserUseCase.execute(request);

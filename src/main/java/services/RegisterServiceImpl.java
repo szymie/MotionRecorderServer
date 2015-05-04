@@ -55,8 +55,8 @@ public class RegisterServiceImpl implements RegisterService {
     private void createResponse(RegisterRequest request) {
 
         if(usernameFree)
-            response = new RegisterResponse(usernameFree, "Rejestracja zakoÒczona powodzeniem");
+            response = new RegisterResponse(usernameFree, "Rejestracja zako≈Ñczona powodzeniem");
         else
-            response = new RegisterResponse(usernameFree, "Uøytkownik '" + request.getUsername() + "' juø istnieje");
+            response = new RegisterResponse(usernameFree, String.format("U≈ºytkownik '%s' ju≈º istnieje", request.getUsername()));
     }
 }

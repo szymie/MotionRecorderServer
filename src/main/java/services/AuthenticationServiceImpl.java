@@ -47,9 +47,9 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private void createResponse() {
 
         if(passwordCorrect)
-            response = new LoginResponse(user.getUsername(), passwordCorrect, "Has≥o poprawne");
+            response = new LoginResponse(user.getUsername(), passwordCorrect, "Has≈Ço poprawne");
         else
-            response = new LoginResponse(user.getUsername(), passwordCorrect, "Has≥o niepoprawne");
+            response = new LoginResponse(user.getUsername(), passwordCorrect, "Has≈Ço niepoprawne");
     }
 
 }
